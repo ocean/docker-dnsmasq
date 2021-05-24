@@ -2,7 +2,8 @@
 
 export DOCKER_CLI_EXPERIMENTAL=enabled
 export DOCKER_BUILDKIT=1
-docker run --privileged --rm tonistiigi/binfmt --install all
+# docker run --privileged --rm tonistiigi/binfmt --install all
+update-binfmts --enable
 docker info
 docker buildx create \
 	--name builder \
