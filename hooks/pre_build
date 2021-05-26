@@ -3,8 +3,8 @@
 export DOCKER_CLI_EXPERIMENTAL=enabled
 export DOCKER_BUILDKIT=1
 uname -a
-apt update
-apt upgrade
+apt-get update -y
+apt-get upgrade -y
 docker version
 docker info
 docker pull tonistiigi/binfmt:latest
